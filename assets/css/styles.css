@@ -264,6 +264,7 @@ img {
 }
 
 .home__content{
+  display: grid;
   row-gap: 3rem;
 }
 
@@ -291,6 +292,18 @@ img {
   display: flex;
   justify-content: center;
   column-gap: 1rem;
+}
+
+.home__buttons .button{
+  box-shadow: 0 4px 12px hsla(0, 0%, 0%, .8);
+}
+
+.home__buttons .button__link{
+  color: var(--text-color);
+}
+
+.home__buttons .button__link i{
+  font-size: 2rem;
 }
 
 .home__info{
@@ -360,7 +373,24 @@ img {
 }
 
 /*=============== BUTTON ===============*/
+.button{
+  display: inline-block;
+  background: var(--third-gradient);
+  padding: .75rem 1.8rem;
+  border-radius: 4rem;
+  color: var(--white-color);
+}
 
+.button,
+.button__link{
+  font-weight: var(--font-medium);
+}
+
+.button__link{
+  display: flex;
+  align-items: center;
+  column-gap: .25rem;
+}
 
 /*=============== POPULAR ===============*/
 
