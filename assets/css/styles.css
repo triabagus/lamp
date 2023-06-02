@@ -472,7 +472,36 @@ img {
 }
 
 /* Swiper class */
+.swiper-wrapper{
+  padding-bottom: 2rem;
+}
 
+.swiper-button-prev::after,
+.swiper-button-next::after{
+  content: '';
+}
+
+.swiper-button-prev,
+.swiper-button-next{
+  top: initial;
+  bottom: .75rem;
+  width: 2rem;
+  height: 2rem;
+  background: var(--container-color);
+  padding: 4px;
+  border-radius: 50%;
+  font-size: 1.8rem;
+  color: var(--first-color);
+  box-shadow: 0 2px 8px hsla(0, 0%, 0%, .1);
+}
+
+.swiper-button-prev{
+  left: calc(50% - 3rem);
+}
+
+.swiper-button-next{
+  right: calc(50% - 3rem);
+}
 
 /*=============== CHOOSE ===============*/
 
