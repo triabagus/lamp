@@ -605,13 +605,24 @@ img {
 }
 
 /* Rotate icon */
-
+.faq-open .choose__faq-icon i{
+  transform: rotate(45deg);
+}
 
 /* Change color icon */
-
+.faq-open .choose__faq-icon{
+  background: var(--white-color);
+  color: var(--first-color-alt);
+  box-shadow: none;
+}
 
 /* Title color change */
-
+.faq-open .choose__faq-title{
+  background: var(--third-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
 
 /*=============== FEATURES ===============*/
 
