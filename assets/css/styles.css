@@ -1228,3 +1228,39 @@ body.dark-theme{
 }
 
 /* For large devices */
+@media screen and (min-width: 1024px){
+  .nav{
+    column-gap: 4rem;
+  }
+  .nav__close,
+  .nav__toggle{
+    display: none;
+  }
+  .nav__list{
+    flex-direction: row;
+    column-gap: 4rem;
+  }
+  .nav__menu{
+    margin-left: auto;
+  }
+
+  .dark-theme .nav__menu{
+    box-shadow: none;
+  }
+
+  .change-theme{
+    color: var(--text-color);
+  }
+
+  .bg-header .change-theme{
+    color: var(--text-color);
+  }
+
+  .products__content{
+    grid-template-columns: repeat(3, max-content);
+  }
+
+  .footer__data{
+    grid-template-columns: repeat(4, max-content);
+  }
+}
